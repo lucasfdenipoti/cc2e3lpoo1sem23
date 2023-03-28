@@ -131,27 +131,29 @@ public class frmPrincipal extends javax.swing.JDialog
 
     private void calcular(String operacao)
     {
+        modelo.Controle controle = new modelo.Controle();
         
+        lblResultado.setText(controle.executar(txfPrimeiroNumero.getText(), txfSegundoNumero.getText(), operacao));
     }
     
     private void btnSomarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnSomarActionPerformed
     {//GEN-HEADEREND:event_btnSomarActionPerformed
-        
+        calcular("+");
     }//GEN-LAST:event_btnSomarActionPerformed
 
     private void btnSubtrairActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnSubtrairActionPerformed
     {//GEN-HEADEREND:event_btnSubtrairActionPerformed
-        
+        calcular("-");
     }//GEN-LAST:event_btnSubtrairActionPerformed
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnMultiplicarActionPerformed
     {//GEN-HEADEREND:event_btnMultiplicarActionPerformed
-        
+        calcular("*");
     }//GEN-LAST:event_btnMultiplicarActionPerformed
 
     private void btnDividirActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnDividirActionPerformed
     {//GEN-HEADEREND:event_btnDividirActionPerformed
-        
+        calcular("/");
     }//GEN-LAST:event_btnDividirActionPerformed
 
     /**

@@ -10,11 +10,12 @@ public class Controle
         if(validacao.mensagem.equals(""))
         {
             Calculos calculos = new Calculos();
-            calculos.calcular(validacao.num1, validacao.num2, operacao);
+            return calculos.calcular(validacao.num1, validacao.num2, operacao).toString();
         }
         else
         {
-            
+            return validacao.mensagem;
         }
+        return null;
     }
 }
