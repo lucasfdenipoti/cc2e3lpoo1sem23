@@ -133,7 +133,10 @@ public class frmPrincipal extends javax.swing.JDialog
     {
         modelo.Controle controle = new modelo.Controle();
         
-        lblResultado.setText(controle.executar(txfPrimeiroNumero.getText(), txfSegundoNumero.getText(), operacao));
+        lblResultado.setText(controle.executar(
+                txfPrimeiroNumero.getText(), 
+                txfSegundoNumero.getText(), 
+                operacao));
     }
     
     private void btnSomarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnSomarActionPerformed

@@ -16,6 +16,5 @@ public class Controle
         {
             return validacao.mensagem;
         }
-        return null;
     }
 }
