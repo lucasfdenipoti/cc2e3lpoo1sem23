@@ -146,7 +146,7 @@ public class frmPrincipal extends javax.swing.JDialog
             lblResultado.setText(controle.getResultado());
         else
         {
-            JOptionPane.showConfirmDialog(rootPane, controle.mensagem);
+            JOptionPane.showMessageDialog(null, controle.mensagem);
             lblResultado.setText("");
         }
     }
