@@ -1,31 +1,28 @@
 package modelo;
 
-import java.math.BigInteger;
-
 public class Primo extends Propriedades 
 {
-    public Primo(BigInteger num)
+    public Primo(int num)
     {
         this.num = num;
-        this.mensagem = this.executar();
+        this.executar();
     }
     
-    private String executar()
+    private void executar()
     {
-        int contador = 0;
-        BigInteger i = BigInteger.ONE;
-        while(i.compareTo(num) < 1)
+        this.resposta = "É primo";
+        if(this.num < 2)
         {
-            if(num.remainder(i).equals(BigInteger.ZERO))
-                contador++;
-            if(contador > 2)
-                break;
-            i = i.add(BigInteger.ONE);
+            this.resposta = "Não é primo";
+            return;
         }
-        if(contador == 2)
-            return Constante.EH_PRIMO;
-        else
-            return Constante.NAO_EH_PRIMO;
-
+        for(int i = 2; i < num / 2 + 1; i++)
+        {
+            if(num % i == 0)
+            {
+                this.resposta = "Não é primo";
+                break;
+            }
+        }
     }
 }

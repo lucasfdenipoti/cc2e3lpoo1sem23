@@ -16,11 +16,11 @@ public class Controle extends Propriedades
         if(validacao.mensagem.equals(""))
         {
             Primo primo = new Primo(validacao.num);
-            this.resposta = primo.mensagem;
+            this.resposta = primo.resposta;
         }
         else
         {
-            this.resposta = validacao.mensagem;
+            this.mensagem = validacao.mensagem;
         }
     }
 }

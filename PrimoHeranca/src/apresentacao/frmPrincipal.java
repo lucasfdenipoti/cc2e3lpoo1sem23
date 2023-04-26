@@ -5,7 +5,6 @@
 package apresentacao;
 
 import javax.swing.*;
-import modelo.Constante;
 import modelo.Controle;
 
 /**
@@ -83,13 +82,12 @@ public class frmPrincipal extends javax.swing.JDialog
     private void btnVerificaPrimoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnVerificaPrimoActionPerformed
     {//GEN-HEADEREND:event_btnVerificaPrimoActionPerformed
         Controle controle = new Controle(txfNumero.getText());
-        if(controle.resposta.equals(Constante.EH_PRIMO) || 
-                controle.resposta.equals(Constante.NAO_EH_PRIMO))
+        if(controle.mensagem.equals(""))
             lblResposta.setText(controle.resposta);
         else
         {
-            JOptionPane.showMessageDialog(null, controle.resposta);
             lblResposta.setText("");
+            JOptionPane.showMessageDialog(null, controle.mensagem);
         }
     }//GEN-LAST:event_btnVerificaPrimoActionPerformed
 

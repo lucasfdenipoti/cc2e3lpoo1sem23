@@ -1,7 +1,5 @@
 package modelo;
 
-import java.math.BigInteger;
-
 public class Validacao extends Propriedades
 {
     public Validacao(String numero)
@@ -15,17 +13,15 @@ public class Validacao extends Propriedades
         this.mensagem = "";
         try
         {
-            this.num = new BigInteger(this.numero);
-            if(num.compareTo(BigInteger.ZERO) < 1)
-                this.mensagem = Constante.EH_INVALIDO;
-            else if(num.equals(BigInteger.ONE))
-            {
-                this.mensagem = Constante.NAO_EH_PRIMO;
-            }
+            this.num = Integer.parseInt(this.numero);
+            if(this.num <= 0)
+                this.mensagem = "Número Inválido";
+            else if(this.num == 1)
+                this.mensagem = "Não é foda";
         }
         catch (Exception e)
         {
-            this.mensagem = Constante.ERRO;
+            this.mensagem = "Erro de Conversão";
         }
     }
 }
