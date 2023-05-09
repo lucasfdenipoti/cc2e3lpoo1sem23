@@ -10,6 +10,7 @@ public class Validacao extends absPropriedades
     @Override
     public void executar()
     {
+        Estaticos.mensagem = "";
         try
         {
             this.num = Integer.valueOf(numero);
