@@ -2,8 +2,8 @@ package modelo;
 
 public abstract class absPropriedades implements intMetodos
 {
-    public String numero;
-    public Integer num;
+    protected String numero;
+    protected Integer num;
 
     public absPropriedades(String numero)
     {

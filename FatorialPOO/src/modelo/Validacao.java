@@ -19,7 +19,7 @@ public class Validacao extends absPropriedades
             if(this.num < 0)
                 Estaticos.mensagem = "Digite um Número Válido";
         }
-        catch (NumberFormatException e)
+            catch (NumberFormatException e)
         {
             Estaticos.mensagem = "Erro de Conversão";
         }

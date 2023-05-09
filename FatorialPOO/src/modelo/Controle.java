@@ -19,14 +19,13 @@ public class Controle extends absPropriedades
         }
         else
         {
-            Estaticos.mensagem = Estaticos.mensagem;        }
+            Estaticos.mensagem = Estaticos.mensagem;        
         }
+    }
 
     @Override
     public String toString()
     {
         return this.numero;
     }
-    
-    
 }
