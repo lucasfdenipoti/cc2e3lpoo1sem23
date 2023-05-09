@@ -16,10 +16,6 @@ public class Controle extends absPropriedades
             absPropriedades calcularfatorial = new CalcularFatorial(validacao.num);
             this.numero = calcularfatorial.toString();
         }
-        else
-        {
-            Estaticos.mensagem = Estaticos.mensagem;        
-        }
     }
 
     @Override
