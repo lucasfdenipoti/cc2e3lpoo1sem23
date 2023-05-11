@@ -4,6 +4,10 @@
  */
 package apresentacao;
 
+import javax.swing.JOptionPane;
+import modelo.ControleTriangulos;
+import modelo.Estaticos;
+
 /**
  *
  * @author Lucas Denipoti
@@ -104,7 +108,17 @@ public class frmTriangulos extends javax.swing.JDialog
 
     private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnVerificarActionPerformed
     {//GEN-HEADEREND:event_btnVerificarActionPerformed
-        
+        ControleTriangulos controle = new ControleTriangulos(
+                txfLado1.getText(),
+                txfLado2.getText(),
+                txfLado3.getText());
+        if(Estaticos.mensagem.equals(""))
+            lblResposta.setText(controle.toString());
+        else
+        {
+            lblResposta.setText("");
+            JOptionPane.showMessageDialog(null, controle.toString());
+        }
     }//GEN-LAST:event_btnVerificarActionPerformed
 
     /**
