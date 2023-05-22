@@ -22,11 +22,5 @@ public class ControleTriangulos extends absPropriedades
         {
             this.resposta = Estaticos.mensagem;
         }
-    }
-
-    @Override
-    public String toString()
-    {
-        return this.resposta;
-    }    
+    } 
 }
