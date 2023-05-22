@@ -12,11 +12,6 @@ public class CalculoFatorial extends absPropriedades
     {
         for(var i = num - 1; i >= 1; i--)
             num *= i;
-    }
-    
-    @Override
-    public String toString()
-    {
-        return num.toString();
+        this.resposta = this.num.toString();
     }
 }

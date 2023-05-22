@@ -16,7 +16,7 @@ public class ControleTriangulos extends absPropriedades
         {
             Triangulos triangulos = new Triangulos(
                     validacao.l1, validacao.l2, validacao.l3);
-            this.resposta = triangulos.resposta;
+            this.resposta = triangulos.toString();
         }
         else
         {

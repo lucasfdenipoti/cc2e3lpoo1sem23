@@ -16,11 +16,6 @@ public class ControleFatorial extends absPropriedades
             absPropriedades calcularfatorial = new CalculoFatorial(validacao.num);
             this.numero = calcularfatorial.toString();
         }
-    }
-    
-        @Override
-    public String toString()
-    {
-        return this.numero;
+        this.resposta = this.numero;
     }
 }

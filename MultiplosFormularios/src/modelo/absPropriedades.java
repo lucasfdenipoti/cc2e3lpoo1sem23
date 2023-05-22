@@ -40,4 +40,10 @@ public abstract class absPropriedades implements intMetodos
         this.l3 = l3;
         this.executar();
     }
+
+    @Override
+    public String toString()
+    {
+        return this.resposta;
+    }
 }
